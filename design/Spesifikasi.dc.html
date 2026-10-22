@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Spesifikasi UX popup</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0F766E}a:hover{color:#115E59}
+</style>
+</helmet>
+<div style="width: 1600px; height: 2000px; box-sizing: border-box; padding: 64px; background: #F3F4F6; color: #111827; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px">
+
+<header style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.06em; color: #4B5563">DOCS/UX.MD · DRAF UNTUK ISU #6</div>
+<h1 style="margin: 0; font-size: 36px; line-height: 44px; font-weight: 700">Spesifikasi UX popup AW Social Media Downloader</h1>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #374151; max-width: 1200px">Popup 360 px, tinggi ≤ 600 px (batas popup Chrome 800 × 600). Satu tujuan: menyimpan video yang sedang diputar, satu berkas per klik. Setiap elemen UI-* ditautkan ke REQ-* dari PRD (#2) dan, bila relevan, ke THR-* (#3).</p>
+</header>
+
+<section style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 16px; font-weight: 600">Warna · terang</h2>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #0F766E"></div><span style="flex: 1">Aksen <span style="font-family: 'JetBrains Mono', monospace; color: #4B5563">#0F766E</span></span><span style="font-weight: 600">5,47:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #111827"></div><span style="flex: 1">Teks <span style="font-family: 'JetBrains Mono', monospace; color: #4B5563">#111827</span></span><span style="font-weight: 600">17,7:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #4B5563"></div><span style="flex: 1">Teks sekunder <span style="font-family: 'JetBrains Mono', monospace; color: #4B5563">#4B5563</span></span><span style="font-weight: 600">7,56:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; box-sizing: border-box; border-radius: 6px; background: #FFF7ED; border: 1px solid #FDBA74"></div><span style="flex: 1">Galat <span style="font-family: 'JetBrains Mono', monospace; color: #4B5563">#7C2D12</span></span><span style="font-weight: 600">8,83:1</span></div>
+</div>
+<div style="background: #111827; color: #F9FAFB; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 16px; font-weight: 600">Warna · gelap</h2>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #2DD4BF"></div><span style="flex: 1">Tombol <span style="font-family: 'JetBrains Mono', monospace; color: #D1D5DB">#2DD4BF</span></span><span style="font-weight: 600">7,77:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #F9FAFB"></div><span style="flex: 1">Teks <span style="font-family: 'JetBrains Mono', monospace; color: #D1D5DB">#F9FAFB</span></span><span style="font-weight: 600">17,0:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #D1D5DB"></div><span style="flex: 1">Teks sekunder <span style="font-family: 'JetBrains Mono', monospace; color: #D1D5DB">#D1D5DB</span></span><span style="font-weight: 600">12,0:1</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px"><div style="width: 28px; height: 28px; border-radius: 6px; background: #5EEAD4"></div><span style="flex: 1">Fokus &amp; tautan <span style="font-family: 'JetBrains Mono', monospace; color: #D1D5DB">#5EEAD4</span></span><span style="font-weight: 600">12,0:1</span></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 16px; font-weight: 600">Tipografi</h2>
+<div style="font-size: 18px; font-weight: 600">Judul status · 18/24</div>
+<div style="font-size: 15px; font-weight: 600">Nama produk, judul daftar · 15/20</div>
+<div style="font-size: 14px">Isi &amp; tombol · 14/20</div>
+<div style="font-size: 12px; color: #4B5563">Meta, footer · 12/17</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4B5563">nama-berkas.mp4 · mono 11</div>
+<div style="font-size: 12px; color: #4B5563">Implementasi memakai <span style="font-family: 'JetBrains Mono', monospace">system-ui</span>; tanpa font jarak jauh.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 20px">
+<h2 style="margin: 0; font-size: 16px; font-weight: 600">Ruang &amp; bentuk</h2>
+<div>Lebar 360 · gutter 16 · jarak 8/12/16</div>
+<div>Target sentuh minimum <b>44 × 44</b></div>
+<div>Radius: tombol 8 · kartu 10 · chip 999</div>
+<div>Cincin fokus 2 px, offset 2 px</div>
+<div>Ikon garis 2 px, inline SVG, <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">aria-hidden</span></div>
+<div>Tema mengikuti <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">prefers-color-scheme</span></div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600">Elemen UI → kebutuhan</h2>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 10px 0; border-bottom: 2px solid #111827; font-size: 13px; font-weight: 600; color: #374151"><div>ID</div><div>Elemen</div><div>Perilaku</div><div>Kebutuhan</div><div>Artboard</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-001</div><div>Header produk + tombol (i)</div><div style="color: #374151">Nama produk; tombol ikon ber-aria-label membuka pemberitahuan hak &amp; privasi.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-006 · REQ-008</div><div>semua</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-002</div><div>Bar konteks tab</div><div style="color: #374151">Domain + jenis halaman + judul; dirender hanya lewat textContent, terpotong dengan elipsis.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-001 · THR-003</div><div>S2–S7</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-003</div><div>Pemberitahuan hak (pertama kali)</div><div style="color: #374151">Muncul sekali; persetujuan disimpan sebagai satu boolean lokal, bukan data pengguna.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-006 · REQ-003</div><div>S1</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-004</div><div>Strip hak di footer</div><div style="color: #374151">Kalimat hak selalu terlihat + tautan kebijakan privasi lokal (berkas di paket).</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-006 · REQ-004</div><div>S2–S9</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-005</div><div>Status bukan Facebook</div><div style="color: #374151">Menjelaskan permukaan yang didukung; tautan membuka Facebook Watch di tab baru.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-001</div><div>S2</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-006</div><div>Status belum ada media</div><div style="color: #374151">Dua langkah bernomor + tombol Muat ulang; menegaskan tak ada pengambilan latar belakang.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-001 · REQ-002</div><div>S3</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-007</div><div>Baris media</div><div style="color: #374151">Jenis, kualitas, ukuran (bila diketahui), nama berkas tersanitasi; kualitas terbaik di atas.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-001 · REQ-005</div><div>S4, S5</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-008</div><div>Tombol Unduh per baris</div><div style="color: #374151">Satu berkas per klik; aria-label memuat kualitas dan ukuran. Tanpa “Unduh semua”.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-002</div><div>S4, S5</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-009</div><div>Panel trek terpisah</div><div style="color: #374151">Hanya muncul bila tidak ada berkas tunggal (opsi D → A di #5); berisi panduan menggabungkan.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-001 · ALG-*</div><div>S5</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-010</div><div>Progres &amp; selesai</div><div style="color: #374151">role="progressbar" + region aria-live polite; tombol Batal dan Tampilkan di folder.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-008</div><div>S6</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-011</div><div>Pesan galat</div><div style="color: #374151">role="alert"; kedaluwarsa, ditolak, tak dikenal — selalu dengan langkah pemulihan.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-002 · REQ-008</div><div>S7</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-012</div><div>Lokalisasi</div><div style="color: #374151">Semua teks lewat chrome.i18n (_locales/en, _locales/id); bahasa mengikuti browser.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-007</div><div>S9</div></div>
+<div style="display: grid; grid-template-columns: 90px 260px minmax(0, 1fr) 170px 110px; gap: 16px; padding: 9px 0; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace">UI-013</div><div>Tema terang / gelap</div><div style="color: #374151">Token warna ganda; kontras AA di kedua tema; cincin fokus selalu terlihat.</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">REQ-008</div><div>S8</div></div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600">Tabel copy EN / ID</h2>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 10px 0; border-bottom: 2px solid #111827; font-size: 13px; font-weight: 600; color: #374151"><div>Kunci messages.json</div><div>English</div><div>Bahasa Indonesia</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">rightsTitle</div><div>Before you start</div><div>Sebelum mulai</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">rightsNotice</div><div>Download only content you own or have permission to download.</div><div>Unduh hanya konten milik Anda atau yang Anda punya izin untuk diunduh.</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">privacyPromise</div><div>Your session, cookies and tokens are never read, stored or sent.</div><div>Sesi, cookie, dan token Anda tidak pernah dibaca, disimpan, atau dikirim.</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">ackButton</div><div>I understand</div><div>Saya mengerti</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">notOnFacebookTitle</div><div>Open a video on Facebook</div><div>Buka video di Facebook</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">noMediaTitle</div><div>Play the video first</div><div>Putar videonya dulu</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">refreshButton</div><div>Refresh list</div><div>Muat ulang daftar</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">mediaFound</div><div>$COUNT$ media found</div><div>$COUNT$ media terdeteksi</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">typeSingle · typeVideo · typeAudio</div><div>Single file · Video only · Audio only</div><div>Satu berkas · Video saja · Audio saja</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">downloadButton</div><div>Download</div><div>Unduh</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">downloading</div><div>Downloading $QUALITY$… $PERCENT$%</div><div>Mengunduh $QUALITY$… $PERCENT$%</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">errorExpired</div><div>The media link has expired. Replay the video for a few seconds, then refresh the list.</div><div>Tautan media sudah kedaluwarsa. Putar ulang video beberapa detik, lalu muat ulang daftar.</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">errorRefused</div><div>The browser refused the download. Check your Downloads folder.</div><div>Unduhan ditolak browser. Periksa folder Unduhan Anda.</div></div>
+<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 8px 0; font-size: 14px; line-height: 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 13px">errorUnknown</div><div>Something went wrong. Try again; if it keeps happening, report it.</div><div>Terjadi kesalahan. Coba lagi; bila berulang, laporkan masalah.</div></div>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 21px">
+<h2 style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600">Aksesibilitas (REQ-008 · WCAG 2.2 AA)</h2>
+<div>1. Urutan fokus: (i) → Muat ulang → Unduh baris 1…n → Kebijakan privasi.</div>
+<div>2. Fokus awal ke tombol utama status; Esc menutup popup (perilaku bawaan Chrome).</div>
+<div>3. Semua kontrol adalah button atau a asli; tombol ikon wajib aria-label.</div>
+<div>4. Perubahan status diumumkan via role="status" aria-live="polite"; galat via role="alert".</div>
+<div>5. Kontras teks ≥ 4,5:1 di kedua tema (nilai terukur di panel warna).</div>
+<div>6. Jenis trek dibedakan dengan teks dan ikon, bukan warna saja.</div>
+<div>7. Animasi progres dimatikan bila prefers-reduced-motion aktif.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 21px">
+<h2 style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600">Rencana screenshot toko (1280 × 800, untuk #18)</h2>
+<div><b>1.</b> Daftar media di atas halaman Reels — nilai utama (contoh di kanvas).</div>
+<div><b>2.</b> Trek terpisah + panduan menggabungkan — kejujuran soal batasan.</div>
+<div><b>3.</b> Janji privasi: tanpa telemetri, tanpa server, sesi tidak dibaca.</div>
+<div><b>4.</b> Pemberitahuan hak — menunjukkan kepatuhan pada kebijakan CWS.</div>
+<div><b>5.</b> Mode gelap + English — aksesibilitas dan dwibahasa.</div>
+<div style="color: #4B5563">Semua screenshot memakai video milik pemilik repo; bahasa listing menunggu keputusan #4.</div>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
