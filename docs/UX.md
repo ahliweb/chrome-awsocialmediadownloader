@@ -22,6 +22,8 @@ This document specifies the extension popup: every state, the elements on it (`U
 
 Mockup: [`design/Alur.dc.html`](../design/Alur.dc.html)
 
+![Interaction flow of the popup](../design/png/Alur.png)
+
 ```mermaid
 flowchart LR
   A([Click extension icon]) --> B{Rights notice acknowledged?}
@@ -49,6 +51,8 @@ Each state has a lo-fi sketch here and a full mockup in `design/`.
 
 Mockup: [`design/S1-Pemberitahuan.dc.html`](../design/S1-Pemberitahuan.dc.html) · `UI-001`, `UI-003`
 
+<img src="../design/png/S1-Pemberitahuan.png" width="360" alt="S1 rights notice popup">
+
 ```
 ┌──────────────────────────────────┐
 │ [↓] AW Social Media Downloader   │
@@ -75,6 +79,8 @@ Mockup: [`design/S1-Pemberitahuan.dc.html`](../design/S1-Pemberitahuan.dc.html) 
 
 Mockup: [`design/S2-BukanFacebook.dc.html`](../design/S2-BukanFacebook.dc.html) · `UI-002`, `UI-005`
 
+<img src="../design/png/S2-BukanFacebook.png" width="360" alt="S2 not-on-Facebook popup">
+
 ```
 │ Active tab · news.example.com    │
 │        (browser + play icon)     │
@@ -89,6 +95,8 @@ Mockup: [`design/S2-BukanFacebook.dc.html`](../design/S2-BukanFacebook.dc.html) 
 ### S3 — No media yet
 
 Mockup: [`design/S3-BelumAdaMedia.dc.html`](../design/S3-BelumAdaMedia.dc.html) · `UI-006`
+
+<img src="../design/png/S3-BelumAdaMedia.png" width="360" alt="S3 no-media-yet popup">
 
 ```
 │ facebook.com · Reels             │
@@ -105,6 +113,8 @@ Mockup: [`design/S3-BelumAdaMedia.dc.html`](../design/S3-BelumAdaMedia.dc.html) 
 ### S4 — Media list (single files)
 
 Mockup: [`design/S4-DaftarMedia.dc.html`](../design/S4-DaftarMedia.dc.html) · `UI-007`, `UI-008`
+
+<img src="../design/png/S4-DaftarMedia.png" width="360" alt="S4 media list popup">
 
 ```
 │ 2 media found                 ⟳  │  ← role="status"
@@ -129,6 +139,8 @@ Mockup: [`design/S4-DaftarMedia.dc.html`](../design/S4-DaftarMedia.dc.html) · `
 
 Mockup: [`design/S5-TrekTerpisah.dc.html`](../design/S5-TrekTerpisah.dc.html) · `UI-009`
 
+<img src="../design/png/S5-TrekTerpisah.png" width="360" alt="S5 separate tracks popup">
+
 ```
 │ 2 tracks found                ⟳  │
 │ ┌ ≋ This video is delivered as ┐ │
@@ -151,6 +163,8 @@ Mockup: [`design/S5-TrekTerpisah.dc.html`](../design/S5-TrekTerpisah.dc.html) ·
 
 Mockup: [`design/S6-Mengunduh.dc.html`](../design/S6-Mengunduh.dc.html) · `UI-010`
 
+<img src="../design/png/S6-Mengunduh.png" width="360" alt="S6 downloading popup">
+
 ```
 │ Downloading 720p… 64%            │  ← role="status" aria-live="polite"
 │ ┌ 720p · 18.4 MB      [Cancel] ┐ │
@@ -167,6 +181,8 @@ Mockup: [`design/S6-Mengunduh.dc.html`](../design/S6-Mengunduh.dc.html) · `UI-0
 ### S7 — Error
 
 Mockup: [`design/S7-Galat.dc.html`](../design/S7-Galat.dc.html) · `UI-011`
+
+<img src="../design/png/S7-Galat.png" width="360" alt="S7 expired-link error popup">
 
 ```
 │ ┌ ⚠ The media link has expired ┐ │  ← role="alert"
@@ -189,6 +205,8 @@ Mockup: [`design/S7-Galat.dc.html`](../design/S7-Galat.dc.html) · `UI-011`
 
 - **Dark mode:** [`design/S8-Gelap.dc.html`](../design/S8-Gelap.dc.html). Follows `prefers-color-scheme`; the mockup shows the keyboard focus ring.
 - **English:** [`design/S9-English.dc.html`](../design/S9-English.dc.html). Shown when the browser UI language is not Indonesian.
+
+<img src="../design/png/S8-Gelap.png" width="360" alt="Media list popup in dark mode with a focused Download button"> <img src="../design/png/S9-English.png" width="360" alt="Media list popup in English">
 
 ## 4. UI elements → requirements
 
@@ -303,6 +321,8 @@ Every proposed `REQ-*` has at least one `UI-*` element. `REQ-003` and `REQ-004` 
 | 5 | Dark mode + English | Accessibility and bilingual support |
 
 All screenshots must use the owner's own test video. The listing language waits for #4.
+
+![Store screenshot 1: media list over a Reels page, 1280 × 800](../design/png/Toko-Screenshot.png)
 
 ## 9. Open questions (resolve before gate 9, #7)
 
