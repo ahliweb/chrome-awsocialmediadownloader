@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Peta standar, regulasi dan preseden</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1720px; box-sizing: border-box; padding: 64px; background: #F3F4F6; color: #111827; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px">
+
+<header style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #4B5563">ARTBOARD 4 · KEPATUHAN</div>
+<h1 style="margin: 0; font-size: 36px; line-height: 44px; font-weight: 700">Peta standar, regulasi &amp; preseden</h1>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #374151; max-width: 1100px">Pemetaan rekomendasi analis: setiap isu dikaitkan dengan standar dan kontrol yang paling relevan, beserta bukti yang dapat dijadikan artefak. Tidak ada standar ISO yang diwajibkan untuk ekstensi Chrome Web Store.</p>
+</header>
+
+<section style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600">Isu → standar ISO/IEC</h2>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 2px solid #111827; font-size: 13px; font-weight: 600; color: #374151">
+<div>Isu</div><div>Standar</div><div>Klausul / kontrol yang relevan</div><div>Bukti di repo</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#2 PRD</div><div>ISO/IEC/IEEE 29148:2018 · ISO/IEC 25010:2023</div><div style="color: #374151">Rekayasa kebutuhan; model karakteristik mutu produk</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">docs/PRD.md · REQ-*</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#3 Threat model</div><div>ISO/IEC 27005:2022 · 27701:2019 · 29100</div><div style="color: #374151">Penilaian &amp; perlakuan risiko keamanan informasi; prinsip privasi dan inventaris PII</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">docs/threat-model.md · THR-*</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#4 Kepatuhan</div><div>ISO/IEC 27001:2022 Annex A</div><div style="color: #374151">A.5.31 persyaratan hukum, regulasi &amp; kontrak · A.5.32 hak kekayaan intelektual</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">docs/COMPLIANCE.md</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#5 #10 Algoritma</div><div>ISO/IEC 27034-1 · ISO/IEC 27002:2022</div><div style="color: #374151">Keamanan aplikasi (ONF/ASC) · 8.26 persyaratan keamanan aplikasi · 8.28 secure coding</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">docs/media-detection.md · ALG-*</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#6 #14 #15 UX</div><div>WCAG 2.2 · ISO/IEC 40500:2012 · ISO 9241-171</div><div style="color: #374151">Kontras AA, operasi keyboard, aria-live; 40500 setara WCAG 2.0 (versi ISO belum mengikuti 2.2)</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">docs/UX.md · UI-*</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#8 Izin minimal</div><div>ISO/IEC 27002:2022 · ISO/IEC 15408</div><div style="color: #374151">8.27 prinsip rekayasa aman (least privilege) · 8.9 manajemen konfigurasi · 15408 sebagai kerangka SFR, tanpa evaluasi formal</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">PERMISSION_MATRIX.md</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#9 #12 Rilis &amp; CI</div><div>ISO/IEC 20000-1:2018 · ISO/IEC 27002:2022</div><div style="color: #374151">8.5.1 manajemen perubahan · 8.5.3 rilis &amp; deployment · 27002 8.25 SDLC aman · 8.32 manajemen perubahan · 8.4 akses kode sumber</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">ci.yml · release.yml · SHA-256</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#11 Pengujian</div><div>ISO/IEC/IEEE 29119 · ISO/IEC 27002:2022</div><div style="color: #374151">Proses &amp; dokumentasi uji · 8.29 uji keamanan · 8.33 informasi uji (data sintetis, tanpa konten Facebook asli)</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">tests/ · TST-*</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#13 Dokumen</div><div>ISO/IEC 29147:2018 · 30111:2019 · 27701:2019</div><div style="color: #374151">Pengungkapan &amp; penanganan kerentanan; pernyataan pemrosesan PII (nihil)</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">SECURITY.md · PRIVACY.md</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace">#17 #18 Go-live</div><div>ISO 22301:2019 · ISO/IEC 27002:2022</div><div style="color: #374151">Rencana kontinuitas: rollback &amp; distribusi cadangan · 5.30 kesiapan TIK · 8.16 pemantauan · 8.8 kerentanan teknis</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">RELEASE_CHECKLIST.md</div>
+</div>
+<div style="display: grid; grid-template-columns: 150px 300px minmax(0, 1fr) 260px; gap: 16px; padding: 10px 0; font-size: 14px; line-height: 20px; color: #4B5563">
+<div style="font-family: 'IBM Plex Mono', monospace">—</div><div>ISO/IEC 27017 · 27018</div><div>Tidak berlaku langsung: tanpa server, tanpa layanan cloud, tanpa PII di cloud. Hanya analog untuk rahasia CI di GitHub Secrets (#12).</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">N/A</div>
+</div>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600">Regulasi Indonesia</h2>
+<div style="font-size: 14px; line-height: 21px"><b>UU No. 28/2014 Hak Cipta</b> — dasar pemberitahuan hak (REQ-006) dan bahasa listing yang tidak mempromosikan unduhan konten orang lain. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#4 #13</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>UU No. 27/2022 Pelindungan Data Pribadi</b> — desain tidak memproses data pribadi; nyatakan secara eksplisit di kebijakan privasi. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#3 #13</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>UU ITE</b> (UU 11/2008 jo. 19/2016 jo. 1/2024) — kerangka sistem dan transaksi elektronik. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#4</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>PP 71/2019 &amp; Permenkominfo 5/2020 (PSE Lingkup Privat)</b> — nilai apakah kewajiban pendaftaran PSE berlaku; kemungkinan kecil untuk ekstensi klien tanpa server, tetapi perlu dicatat di #4. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#4</span></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600">Kebijakan &amp; regulasi internasional</h2>
+<div style="font-size: 14px; line-height: 21px"><b>Chrome Web Store Program Policies</b> — larangan memfasilitasi unduhan konten berhak cipta tanpa izin; single purpose; izin minimal; pengunduh dapat dibatasi dari “featured”. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#4 #13 #18</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>Meta Terms §3.2.3 &amp; Automated Data Collection Terms</b> — larangan akses/pengumpulan otomatis tanpa izin. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#4</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>DMCA 17 U.S.C. §1201</b> — anti-pengelakan kontrol akses; selaras dengan non-goal “tanpa bypass”. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#2 #5</span></div>
+<div style="font-size: 14px; line-height: 21px"><b>GDPR Pasal 25</b> (privacy by design) — relevan bagi pengguna UE meski tidak ada data yang diproses. <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563">#3 #13</span></div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 600">Preseden &amp; pelajaran — 6 kasus pembanding</h2>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 2px solid #111827; font-size: 13px; font-weight: 600; color: #374151">
+<div>Kasus</div><div>Lingkup</div><div>Yang terjadi</div><div>Pelajaran untuk proyek ini</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div><b>youtube-dl di GitHub</b> (2020)</div><div style="color: #4B5563">Internasional</div><div style="color: #374151">Repo diturunkan lewat klaim DMCA RIAA (Okt), dipulihkan setelah kode uji yang merujuk lagu berhak cipta dihapus (Nov).</div><div>Fixture uji harus sintetis — sudah tepat di #5 dan #11.</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div><b>Pengunduh YouTube di CWS</b></div><div style="color: #4B5563">Internasional</div><div style="color: #374151">Google tidak mengizinkan pengunduh YouTube di CWS; ekstensi seperti Video DownloadHelper versi Chrome mengecualikan YouTube.</div><div>Pemilik toko dapat membatasi cakupan platform — cakupan “Facebook saja” perlu diuji di #4.</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div><b>Facebook v. Power Ventures</b> (9th Cir., 2016)</div><div style="color: #4B5563">Internasional</div><div style="color: #374151">Akses otomatis yang berlanjut setelah surat penghentian dinilai tanpa otorisasi.</div><div>Pertahankan REQ-002: hanya aksi pengguna, tanpa crawling atau pengumpulan latar belakang.</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div><b>hiQ Labs v. LinkedIn</b> (2017–2022)</div><div style="color: #4B5563">Internasional</div><div style="color: #374151">Meski data publik, hiQ akhirnya dinyatakan melanggar User Agreement dan berdamai pada Des 2022.</div><div>Risiko kontraktual ToS tetap nyata walau tidak ada pelanggaran pidana — dasar R2.</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; font-size: 14px; line-height: 20px">
+<div><b>Pemblokiran PSE oleh Kominfo</b> (Jul 2022)</div><div style="color: #4B5563">Indonesia</div><div style="color: #374151">Sejumlah layanan (antara lain Steam, PayPal, Epic Games) sempat diblokir karena belum mendaftar PSE Lingkup Privat.</div><div>Kewajiban lokal dapat memutus distribusi — catat analisis PSE di #4.</div>
+</div>
+<div style="display: grid; grid-template-columns: 260px 110px minmax(0, 1fr) 380px; gap: 16px; padding: 10px 0; font-size: 14px; line-height: 20px">
+<div><b>AW Browser Cleaner v1.2.0</b></div><div style="color: #4B5563">Internal AhliWeb</div><div style="color: #374151">Ekstensi milik penerbit yang sama, sudah terbit di CWS, dijadikan model rujukan oleh #1, #9, #11–#16.</div><div>Gunakan ulang pola CI, uji, dan dokumen CWS-nya untuk memangkas jalur kritis.</div>
+</div>
+</section>
+
+<footer style="font-size: 13px; line-height: 20px; color: #4B5563">Pemetaan dan penilaian bersifat rekomendasi analis, bukan nasihat hukum; keputusan kepatuhan tetap milik pemilik repo (#4). Klausul ISO merujuk edisi yang disebut; periksa edisi terbaru sebelum audit.</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1720}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Risiko, inkonsistensi dan tindakan</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1180px; box-sizing: border-box; padding: 64px; background: #F3F4F6; color: #111827; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px">
+
+<header style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #4B5563">ARTBOARD 2 · PENILAIAN ANALIS</div>
+<h1 style="margin: 0; font-size: 36px; line-height: 44px; font-weight: 700">Risiko, inkonsistensi &amp; tindakan prioritas</h1>
+</header>
+
+<section style="display: grid; grid-template-columns: 600px minmax(0, 1fr); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Matriks risiko</h2>
+<div style="display: flex; gap: 12px">
+<div style="width: 24px; display: flex; align-items: center; justify-content: center"><div style="transform: rotate(-90deg); white-space: nowrap; font-size: 13px; font-weight: 600; color: #4B5563">DAMPAK ↑</div></div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 8px">
+<div style="display: grid; grid-template-columns: 64px repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; align-items: center; font-size: 13px; color: #4B5563">Tinggi</div>
+<div style="height: 104px; background: #FFEDD5; border-radius: 8px; padding: 10px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px"><span style="padding: 4px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R6</span><span style="padding: 4px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R7</span></div>
+<div style="height: 104px; background: #FED7AA; border-radius: 8px; padding: 10px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px"><span style="padding: 4px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R2</span></div>
+<div style="height: 104px; background: #C2410C; border-radius: 8px; padding: 10px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px"><span style="padding: 4px 10px; border-radius: 999px; background: #FFFFFF; color: #111827; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R1</span><span style="padding: 4px 10px; border-radius: 999px; background: #FFFFFF; color: #111827; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R3</span></div>
+</div>
+<div style="display: grid; grid-template-columns: 64px repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; align-items: center; font-size: 13px; color: #4B5563">Sedang</div>
+<div style="height: 104px; background: #F9FAFB; border-radius: 8px"></div>
+<div style="height: 104px; background: #FFF7ED; border-radius: 8px"></div>
+<div style="height: 104px; background: #FED7AA; border-radius: 8px; padding: 10px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px"><span style="padding: 4px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R4</span></div>
+</div>
+<div style="display: grid; grid-template-columns: 64px repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; align-items: center; font-size: 13px; color: #4B5563">Rendah</div>
+<div style="height: 104px; background: #F9FAFB; border-radius: 8px"></div>
+<div style="height: 104px; background: #F9FAFB; border-radius: 8px"></div>
+<div style="height: 104px; background: #FFF7ED; border-radius: 8px; padding: 10px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px"><span style="padding: 4px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">R5</span></div>
+</div>
+<div style="display: grid; grid-template-columns: 64px repeat(3, minmax(0, 1fr)); gap: 8px; font-size: 13px; color: #4B5563; text-align: center">
+<div></div><div>Rendah</div><div>Sedang</div><div>Tinggi</div>
+</div>
+<div style="text-align: center; font-size: 13px; font-weight: 600; color: #4B5563; padding-left: 72px">KEMUNGKINAN →</div>
+</div>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px">
+<h2 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600">Register risiko</h2>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C">R1</div>
+<div style="font-size: 15px; line-height: 22px"><b>Ditolak atau dihapus dari Chrome Web Store.</b> Kebijakan CWS melarang ekstensi yang memfasilitasi unduhan konten berhak cipta tanpa izin.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#4 #13 #18</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C">R3</div>
+<div style="font-size: 15px; line-height: 22px"><b>Facebook mengubah pemutar.</b> MSE/DASH, URL bertanda tangan berumur pendek — deteksi media bisa rusak tanpa peringatan.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#5 #10 #18</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C">R2</div>
+<div style="font-size: 15px; line-height: 22px"><b>Ketentuan Meta §3.2.3.</b> Larangan akses/pengumpulan data otomatis tanpa izin — risiko pada akun Facebook pengguna.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#4</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">R4</div>
+<div style="font-size: 15px; line-height: 22px"><b>Bus factor satu.</b> Satu pemilik, tanpa assignee atau reviewer kedua untuk dua gerbang keras.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#7 #17</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">R5</div>
+<div style="font-size: 15px; line-height: 22px"><b>Backlog tanpa label/milestone.</b> Kemajuan tidak dapat difilter atau dilaporkan otomatis.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">semua</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; border-bottom: 1px solid #E5E7EB; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">R6</div>
+<div style="font-size: 15px; line-height: 22px"><b>Kebocoran URL media atau XSS di popup</b> (THR-002, THR-003) — sudah dimitigasi di desain.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#3 #10 #14</div>
+</div>
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 120px; gap: 12px; padding: 10px 0; align-items: baseline">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">R7</div>
+<div style="font-size: 15px; line-height: 22px"><b>Rantai pasok &amp; akun penerbit diambil alih</b> (THR-004, THR-005).</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4B5563; text-align: right">#12 #18</div>
+</div>
+</div>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; flex: 1">
+<div style="background: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Inkonsistensi antarisu (terverifikasi)</h2>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C; width: 28px; flex-shrink: 0">I1</div><div style="font-size: 14px; line-height: 21px"><b>REQ-007 vs #15.</b> PRD (#2) mewajibkan UI EN/ID di v1.0.0, tetapi #15 berstatus P2 “tidak memblokir” dan #18 menulis “Indonesian if #15 ships”.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C; width: 28px; flex-shrink: 0">I2</div><div style="font-size: 14px; line-height: 21px"><b>Inversi prioritas.</b> #6 (P1) memblokir Gate 9 (#7), yang memblokir seluruh implementasi P0 — secara efektif #6 adalah P0.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C; width: 28px; flex-shrink: 0">I3</div><div style="font-size: 14px; line-height: 21px"><b>Klaim tanpa bukti.</b> #1 menyebut v1.0.0 “confirmed in #9”, padahal #9 masih terbuka tanpa komentar.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #C2410C; width: 28px; flex-shrink: 0">I4</div><div style="font-size: 14px; line-height: 21px"><b>Status repo usang.</b> #1 menulis repo hanya berisi LICENSE; kini main memuat <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">TEST_WRITE.md</span> (commit d90c6c0).</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; width: 28px; flex-shrink: 0">I5</div><div style="font-size: 14px; line-height: 21px"><b>Relasi satu arah.</b> 8 relasi “Blocks” tidak tercermin di “Depends on” isu tujuan (mis. #3→#8, #5→#11, #6→#16, lima ke #18). Dampak kecil, karena sebagian besar transitif.</div></div>
+</div>
+
+<div style="background: #111827; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Tindakan prioritas</h2>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">1</div><div style="font-size: 14px; line-height: 21px">Kerjakan <b>#2</b> sekarang; minta pemilik menyetujui PRD lewat komentar di isu.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">2</div><div style="font-size: 14px; line-height: 21px">Jalankan <b>#3</b> dan <b>#4</b> paralel setelah #2 — keputusan #4 menentukan apakah jalur CWS layak diteruskan.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">3</div><div style="font-size: 14px; line-height: 21px">Buat label prioritas/jenis dan milestone <b>v1.0.0</b>, lalu terapkan ke 18 isu (menutup R5).</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">4</div><div style="font-size: 14px; line-height: 21px">Selesaikan <b>I1</b> dan <b>I2</b> sebelum Gate 9 (#7): naikkan #15 ke P1 atau tunda REQ-007; naikkan #6 ke P0.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">5</div><div style="font-size: 14px; line-height: 21px">Hapus <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">TEST_WRITE.md</span> dari main dan perbarui “Current state” di #1.</div></div>
+<div style="display: flex; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: #93C5FD; width: 24px; flex-shrink: 0">6</div><div style="font-size: 14px; line-height: 21px">Siapkan rencana cadangan distribusi unpacked bila #4 = no-go, dan tunjuk reviewer kedua untuk #7 dan #17 (R4).</div></div>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1180}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
